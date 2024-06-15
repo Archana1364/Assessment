@@ -12,3 +12,17 @@ A mapping of addresses to their token balances
 A function that increases the total supply of tokens.
 ### 4.Burn Function:
 A function that decreases the total supply of tokens.
+## Functions
+### Mint Funtion
+function mint (address _address, uint _value) public {
+        totalSupply += _value;
+        balances[_address] += _value;
+        }
+### Burn Function
+function burn (address _address, uint _value) public {
+        if (balances[_address] >= _value) {
+            totalSupply -= _value;
+            balances[_address] -= _value;
+        }
+## Usage
+utilize Solidity and Ethereum smart contracts with caution. To utilize this contract, deploy it to the Ethereum network and use the functions to mint or burn tokens as needed.
