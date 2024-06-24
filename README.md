@@ -17,6 +17,39 @@ Go to the Remix website http://remix.ethereum.org
 ### 2.Create a New File:
 Click on the "+" icon in the left-hand sidebar and save the file with a '.sol' extension (e.g., 'MyToken.sol'). Copy and paste the following code into the file:
 
+// SPDX-License-Identifier: MIT
 
+pragma solidity^0.8.18;
+contract MyToken {
+    // Public variables to store the details about the coin
+    string public tokenName = "SilverCoin";
+    string public tokenAbbrv = "SLV";
+    uint public totalSupply=0;
+
+    // Mapping to store balances of addressess
+    mapping(address => uint) public balances;
+
+    // Mint function to increase the total supply and balance of a given address
+    function mint (address _address, uint _value) public {
+        totalSupply += _value;
+        balances[_address] += _value;
+    }
+
+    // Burn function to decrease the total supply and balance of a given address
+    function burn (address _address, uint _value) public {
+        if (balances[_address] >= _value) {
+            totalSupply -= _value;
+            balances[_address] -= _value;
+        }
+    }
+}
+
+### 3.Compile the code:
+Click on the "Solidity Compiler" tab in the left-hand sidebar. Ensure the "Compiler" option is set to 0.8.18 (or another compatible version), and then click the "Compile MyToken.sol" button.
+### 4.Deploy the Contract:
+Click on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the MyToken contract from the dropdown menu, and click the "Deploy" button.
+### 5.Interact with the Contract:
+**Mint Token:** Use the mint function by providing an address and a value to create new tokens.
+**burn Token:** Use the burn function by providing an address and a value to destroy tokens, ensuring the address has a sufficient balance.
 # Author
 Archana Budda
