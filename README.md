@@ -20,6 +20,7 @@ Click on the "+" icon in the left-hand sidebar and save the file with a '.sol' e
 // SPDX-License-Identifier: MIT
 
 pragma solidity^0.8.18;
+
 contract MyToken {
 
     // Public variables to store the details about the coin
