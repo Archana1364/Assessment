@@ -1,6 +1,6 @@
 # Assessment
 # Project: Create a Token
-## Overview
+## Description
 A basic Ethereum smart contract for a unique token can be found in this repository. The contract tracks address balances and performs standard operations like minting and burning tokens.
 ## Contract Details
 The smart contract includes the following features:
@@ -26,3 +26,5 @@ function burn (address _address, uint _value) public {
         }
 ## Usage
 utilize Solidity and Ethereum smart contracts with caution. To utilize this contract, deploy it to the Ethereum network and use the functions to mint or burn tokens as needed.
+## Author
+Archana Budda
