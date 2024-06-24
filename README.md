@@ -12,15 +12,16 @@ The 'MyToken' smart contract is developed in Solidity, a programming language th
 # Getting Started
 ## Executing Program
 To run this program, you need an Ethereum development environment. You can use Remix, an online Solidity IDE.
-### 1.Open Remix:
+### 1. Open Remix:
 Go to the Remix website http://remix.ethereum.org 
-### 2.Create a New File:
+### 2. Create a New File:
 Click on the "+" icon in the left-hand sidebar and save the file with a '.sol' extension (e.g., 'MyToken.sol'). Copy and paste the following code into the file:
 
 // SPDX-License-Identifier: MIT
 
 pragma solidity^0.8.18;
 contract MyToken {
+
     // Public variables to store the details about the coin
     string public tokenName = "SilverCoin";
     string public tokenAbbrv = "SLV";
@@ -44,12 +45,15 @@ contract MyToken {
     }
 }
 
-### 3.Compile the code:
+### 3. Compile the code:
 Click on the "Solidity Compiler" tab in the left-hand sidebar. Ensure the "Compiler" option is set to 0.8.18 (or another compatible version), and then click the "Compile MyToken.sol" button.
-### 4.Deploy the Contract:
+### 4. Deploy the Contract:
 Click on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the MyToken contract from the dropdown menu, and click the "Deploy" button.
-### 5.Interact with the Contract:
+### 5. Interact with the Contract:
 **Mint Token:** Use the mint function by providing an address and a value to create new tokens.
+
 **burn Token:** Use the burn function by providing an address and a value to destroy tokens, ensuring the address has a sufficient balance.
-# Author
+# Authors
 Archana Budda
+# Liscense
+This project is licensed under the MIT License - see the LICENSE.md file for details
