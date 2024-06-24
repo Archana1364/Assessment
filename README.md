@@ -56,5 +56,3 @@ Click on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select th
 **burn Token:** Use the burn function by providing an address and a value to destroy tokens, ensuring the address has a sufficient balance.
 # Authors
 Archana Budda
-# Liscense
-This project is licensed under the MIT License - see the LICENSE.md file for details
