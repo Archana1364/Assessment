@@ -15,7 +15,7 @@ To run this program, you need an Ethereum development environment. You can use R
 ### 1. Open Remix:
 Go to the Remix website http://remix.ethereum.org 
 ### 2. Create a New File:
-Click on the "+" icon in the left-hand sidebar and save the file with a '.sol' extension (e.g., 'MyToken.sol'). Copy and paste the code
+Click on the "+" icon in the left-hand sidebar and save the file with a '.sol' extension (e.g., 'MyToken.sol'). Copy and paste the code.
 ### 3. Compile the code:
 Click on the "Solidity Compiler" tab in the left-hand sidebar. Ensure the "Compiler" option is set to 0.8.18 (or another compatible version), and then click the "Compile MyToken.sol" button.
 ### 4. Deploy the Contract:
