@@ -16,7 +16,6 @@ To run this program, you need an Ethereum development environment. You can use R
 Go to the Remix website http://remix.ethereum.org 
 ### 2.Create a New File:
 Click on the "+" icon in the left-hand sidebar and save the file with a '.sol' extension (e.g., 'MyToken.sol'). Copy and paste the following code into the file:
-
 // SPDX-License-Identifier: MIT
 pragma solidity^0.8.18;
 
@@ -25,24 +24,25 @@ contract MyToken {
     // Public variables to store the details about the coin
     string public tokenName = "SilverCoin";
     string public tokenAbbrv = "SLV";
-    uint public totalSupply=0;
+    uint public totalSupply = 0;
 
-    // Mapping to store balances of addressess
+    // Mapping to store balances of addresses
     mapping(address => uint) public balances;
 
     // Mint function to increase the total supply and balance of a given address
-    function mint (address _address, uint _value) public {
+    function mint(address _address, uint _value) public {
         totalSupply += _value;
         balances[_address] += _value;
     }
 
     // Burn function to decrease the total supply and balance of a given address
-    function burn (address _address, uint _value) public {
+    function burn(address _address, uint _value) public {
         if (balances[_address] >= _value) {
             totalSupply -= _value;
             balances[_address] -= _value;
         }
     }
 }
+
 # Author
 Archana Budda
