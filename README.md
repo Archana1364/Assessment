@@ -45,6 +45,7 @@ contract MyToken {
         }
     }
 }
+
 ### 3. Compile the code:
 Click on the "Solidity Compiler" tab in the left-hand sidebar. Ensure the "Compiler" option is set to 0.8.18 (or another compatible version), and then click the "Compile MyToken.sol" button.
 ### 4. Deploy the Contract:
